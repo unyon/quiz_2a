@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quiz2a</title>
+  <title>Quiz2</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+<h1>Join the Mailing list!</h1>
+<br />
+<div class="col-xs-8 col-xs-offset-1">
+<%= link_to 'Subscribe', new_name_path, :data => {:toggle => 'modal', :target => '#myModal'}%>
+</div>
+</header>
+
 <body>
+
+
 
 <%= yield %>
 

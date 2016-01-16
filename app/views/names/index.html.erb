@@ -1,0 +1,12 @@
+<div class="name-box col-xs-10 col-xs-offset-1">
+<% @names.each do |name| %>
+  <div>
+    <h4><%= name.person_name %></h4>
+    <br />
+    <i><%= name.email %></i><br />
+    <br />
+  </div>
+
+  <hr />
+<% end %>
+</div>
